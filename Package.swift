@@ -3,8 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "ADAppRater",
+    defaultLocalization: "en",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -15,7 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "ADAppRater",
-            path: "ADAppRater"
+            path: "ADAppRater",
+            publicHeadersPath: "Headers"
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
