@@ -1,4 +1,4 @@
-// swift-tools-version:5.10
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
@@ -19,6 +19,5 @@ let package = Package(
             path: "ADAppRater",
             publicHeadersPath: "Headers"
         ),
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
