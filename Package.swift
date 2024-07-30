@@ -1,9 +1,8 @@
-// swift-tools-version:5.10
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
     name: "ADAppRater",
-    defaultLocalization: "en",
     platforms: [
         .iOS(.v12)
     ],
@@ -19,6 +18,5 @@ let package = Package(
             path: "ADAppRater",
             publicHeadersPath: "Headers"
         ),
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
